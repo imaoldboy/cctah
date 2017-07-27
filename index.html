@@ -1,0 +1,970 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ä¸­å®¶é™¢ï¼ˆåŒ—äº¬ï¼‰æ£€æµ‹è®¤è¯æœ‰é™å…¬å¸ </title>
+    <meta name="Keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="renderer" content="webkit" /> 
+    <link href="Content/web/css/hct.css" tppabs="http://www.chct-bj.com/Content/web/css/hct.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .leftclass {
+            margin-left: 15px;
+            width: 90px;
+            height: 30px;
+            float: left;
+            color: #0e6eb8;
+            font-family: Microsoft Yahei;
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: bold;
+           background: url("Content/web/images/zj-6.gif")/*tpa=http://www.chct-bj.com/Content/web/images/zj-6.gif*//*tpa=http://www.chct-bj.com/Content/web/images/zj-6.gif*/ repeat-x;
+           background-position:0 -3px;overflow: hidden;
+        }
+
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            background-color: #e4e4e4;
+        }
+    </style>
+    <script type="text/javascript">
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+        function addFavorite2() {
+            var url = window.location;
+            var title = document.title;
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.indexOf("360se") > -1) {
+                alert("ç”±äº360æµè§ˆå™¨åŠŸèƒ½é™åˆ¶ï¼Œè¯·æŒ‰ Ctrl+D æ‰‹åŠ¨æ”¶è—ï¼");
+            }
+            else if (ua.indexOf("msie 8") > -1) {
+                window.external.AddToFavoritesBar(url, title); //IE8
+            }
+            else if (document.all) {
+                try {
+                    window.external.addFavorite(url, title);
+                } catch (e) {
+                    alert('æ‚¨çš„æµè§ˆå™¨ä¸æ”¯æŒ,è¯·æŒ‰ Ctrl+D æ‰‹åŠ¨æ”¶è—!');
+                }
+            }
+            else if (window.sidebar) {
+                window.sidebar.addPanel(title, url, "");
+            }
+            else {
+                alert('æ‚¨çš„æµè§ˆå™¨ä¸æ”¯æŒ,è¯·æŒ‰ Ctrl+D æ‰‹åŠ¨æ”¶è—!');
+            }
+        }
+        function SetHome(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("æŠ±æ­‰ï¼Œæ­¤æ“ä½œè¢«æµè§ˆå™¨æ‹’ç»ï¼\n\nè¯·åœ¨æµè§ˆå™¨åœ°å€æ è¾“å…¥â€œabout:configâ€å¹¶å›è½¦ç„¶åå°†[signed.applets.codebase_principal_support]è®¾ç½®ä¸º'true'");
+                    }
+                } else {
+                    alert("æŠ±æ­‰ï¼Œæ‚¨æ‰€ä½¿ç”¨çš„æµè§ˆå™¨æ— æ³•å®Œæˆæ­¤æ“ä½œã€‚\n\næ‚¨éœ€è¦æ‰‹åŠ¨å°†ã€" + url + "ã€‘è®¾ç½®ä¸ºé¦–é¡µã€‚");
+                }
+            }
+        }
+
+        //æ”¶è—æœ¬ç«™
+        function AddFavorite(title, url) {
+            try {
+                window.external.addFavorite(url, title);
+            }
+            catch (e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");
+                }
+                catch (e) {
+                    alert("æŠ±æ­‰ï¼Œæ‚¨æ‰€ä½¿ç”¨çš„æµè§ˆå™¨æ— æ³•å®Œæˆæ­¤æ“ä½œã€‚\n\nåŠ å…¥æ”¶è—å¤±è´¥ï¼Œè¯·è¿›å…¥æ–°ç½‘ç«™åä½¿ç”¨Ctrl+Dè¿›è¡Œæ·»åŠ ");
+                }
+            }
+        }
+    
+      </script>
+    <script type="text/javascript" src="Content/web/js/jquery.js" tppabs="http://www.chct-bj.com/Content/web/js/jquery.js"></script>
+    <script type="text/javascript" src="Content/web/js/common.js" tppabs="http://www.chct-bj.com/Content/web/js/common.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('Content/web/images/home-4a.gif'/*tpa=http://www.chct-bj.com/Content/web/images/home-4a.gif*/,'Content/web/images/home-5a.gif'/*tpa=http://www.chct-bj.com/Content/web/images/home-5a.gif*/)">
+    <link rel="stylesheet" type="text/css" href="Content/web/css/style.css" tppabs="http://www.chct-bj.com/Content/web/css/style.css" />
+    <div class="keifu">
+        <div class="icon_keifu"></div>
+        <div class="keifu_box">
+            <div class="keifu_head" style="display:none;"><a href="javascript:void(0)" class="keifu_close"></a></div>
+            <ul class="keifu_con">
+                <li style="height:123px;"><a href="index.htm" tppabs="http://www.chct-bj.com/"><img src="images/kefu1.png" tppabs="http://www.chct-bj.com/images/kefu1.png" border="0" width="80" height="123" /></a></li>
+                <li style="height:50px;"><a target="_blank" href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=2122667477&site=qq&menu=yes  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=2122667477&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=2122667477&site=qq&menu=yes"><img src="images/kefu2.png" tppabs="http://www.chct-bj.com/images/kefu2.png" border="0" width="80" height="50" /></a></li>
+                <li style="height:51px;"><a target="_blank" href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=3123194491&site=qq&menu=yes  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=3123194491&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=3123194491&site=qq&menu=yes"><img src="images/kefu3.png" tppabs="http://www.chct-bj.com/images/kefu3.png" border="0" width="80" height="51" /></a></li>
+                <li style="height:46px;"><a target="_blank" href="Messages/Add.htm" tppabs="http://www.chct-bj.com/Messages/Add"><img src="images/kefu4.png" tppabs="http://www.chct-bj.com/images/kefu4.png" border="0" width="80" height="46" /></a></li>
+                <li style="height:84px;"><a  href="#"><img src="images/0523-2.gif" tppabs="http://www.chct-bj.com/images/0523-2.gif" border="0" width="80" height="84" /></a></li>
+                <li style="height:26px;"><a href="#"><img src="images/kefu5.png" tppabs="http://www.chct-bj.com/images/kefu5.png" border="0" width="80" height="26" /></a></li>
+            </ul>
+            <div class="keifu_bot"></div>
+        </div>
+    </div>
+
+    <table width="1170" height="118" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="64" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="724" bgcolor="#FFFFFF"><a href="#"><img src="images/logo.gif" tppabs="http://www.chct-bj.com/images/logo.gif" width="400" height="94" border="0" /></a></td>
+            <td width="382" bgcolor="#FFFFFF" background="images/t-1.gif" tppabs="http://www.chct-bj.com/images/t-1.gif">
+                <style type="text/css">
+                    .search11 {    border: none;
+    height: 25px;
+    line-height: 27px;
+    width: 180px;
+                    }
+                </style>
+                <table width="320" height="50
+    " border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="260" align="right">
+                            <a href="-.htm#userlogin" tppabs="http://www.chct-bj.com/?#userlogin">ä¼šå‘˜ç™»é™†</a>
+                            | <a href="#" onClick="javascript: addFavorite2();">åŠ å…¥æ”¶è—å¤¹</a> |  <a href="javascript:void(0);" onClick="    SetHome(this, 'index.htm'/*tpa=http://www.chct-bj.com/*/);">è®¾ä¸ºé¦–é¡µ</a></td>
+                    </tr>
+                </table>
+                <table width="212" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+<form action="http://www.chct-bj.com/News/Search" id="0" method="get">                        <td width="14"><img src="images/seach-1.gif" tppabs="http://www.chct-bj.com/images/seach-1.gif" width="14" height="32" /></td>
+                        <td width="143" background="images/seach-2.gif" tppabs="http://www.chct-bj.com/images/seach-2.gif"><input name="Title"  id="Title" type="text" class="search11" /><input type="hidden" name="search" id="search" value="1" /></td>
+                        <td width="55"><input name="" type="image" src="images/seach-3.gif" tppabs="http://www.chct-bj.com/images/seach-3.gif" border="0" /></td>
+</form>                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="1170" height="53" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="18" background="images/cd-bj1.gif" tppabs="http://www.chct-bj.com/images/cd-bj1.gif">&nbsp;</td>
+            <td width="1160" background="images/cd-bj2.gif" tppabs="http://www.chct-bj.com/images/cd-bj2.gif">
+                <style type="text/css">
+                    .navtitle {
+                        width: 128px;
+                        height: 53px;
+                        float: left;
+                        margin: 0px;
+                        padding: 0px;
+                        line-height: 59px;
+                        font-size: 18px;
+                        color: #ffffff;
+                        cursor: pointer;
+                    }
+
+                    .selectnav {
+                        background-image: url("Content/web/images/cd-1a.gif")/*tpa=http://www.chct-bj.com/Content/web/images/cd-1a.gif*//*tpa=http://www.chct-bj.com/Content/web/images/cd-1a.gif*/;
+                        text-align: center;
+                    }
+
+                    .selectednav {
+                        background-image: url("Content/web/images/cd-1.gif")/*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*//*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*/;
+                        text-align: center;
+                    }
+
+                    .selectnav:hover {
+                        background-image: url("Content/web/images/cd-1.gif")/*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*//*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*/;
+                        text-align: center;
+                    }
+                </style>
+                        <div class="navtitle selectednav" onClick="javascript: window.location.href = 'index.htm'/*tpa=http://www.chct-bj.com/*/">é¦–é¡µ</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'News/Lists/2.htm'/*tpa=http://www.chct-bj.com/News/Lists/2*/">æ–°é—»ä¸­å¿ƒ</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'About/Detail/6.htm'/*tpa=http://www.chct-bj.com/About/Detail/6*/">è®¤è¯æœåŠ¡</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'About/Detail/66.htm'/*tpa=http://www.chct-bj.com/About/Detail/66*/">æ£€æµ‹æœåŠ¡</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'Video/jiaoxue.htm'/*tpa=http://www.chct-bj.com/Video/jiaoxue*/">ä¸­å®¶é™¢å¤§å­¦</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'About/Detail/87.htm'/*tpa=http://www.chct-bj.com/About/Detail/87*/">ç»¼åˆæœåŠ¡</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'DownLoad/Lists/106.htm'/*tpa=http://www.chct-bj.com/DownLoad/Lists/106*/">ä¸‹è½½ä¸­å¿ƒ</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'About/Detail/98.htm'/*tpa=http://www.chct-bj.com/About/Detail/98*/">å…³äºæˆ‘ä»¬</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = 'About/Detail/97.htm'/*tpa=http://www.chct-bj.com/About/Detail/97*/">è”ç³»æˆ‘ä»¬</div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        $(".navtitle a").click(function () {
+            $(".navtitle").removeClass("selectednav").addClass("selectnav");
+            $(this).parent(".navtitle").removeClass("selectnav").addClass("selectednav");
+        });
+    </script>
+
+    
+
+<script src="Scripts/jquery-1.7.1.min.js" tppabs="http://www.chct-bj.com/Scripts/jquery-1.7.1.min.js"></script>
+<script src="layer/layer.js" tppabs="http://www.chct-bj.com/layer/layer.js"></script>
+<style>
+#cs_box {
+    width: 110px;
+    height: 189px;
+    background: #CCCCCC;
+    position: fixed;
+    left: 10px;
+    top: 100px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+</style>
+<div id="cs_box" style="top:50px;">
+	<div class="cs_img"><a href="News/Detail/341.htm" tppabs="http://www.chct-bj.com/News/Detail/341"><img src="images/fc.gif" tppabs="http://www.chct-bj.com/images/fc.gif" style="height:189px; width: 110px;"></a></div>
+</div>
+   <table width="1170" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="14" bgcolor="#FFFFFF"></td>
+    </tr>
+    <tr>
+        <td bgcolor="#FFFFFF">
+            <link rel="stylesheet" href="Content/web/css/lrtk.css" tppabs="http://www.chct-bj.com/Content/web/css/lrtk.css" type="text/css">
+            <!-- ä»£ç å¼€å§‹ -->
+            <div class="banner_index">
+                <a href="javascript:void(0);" class="btn btnPre" id="banner_index_pre"></a>
+                <a href="javascript:void(0);" class="btn btnNext" id="banner_index_next"></a>
+                <ul class="banner_wrap" id="banner_index" style="margin: 0px; padding: 0px; ">
+                    <li><a href="News/Detail/342.htm" tppabs="http://www.chct-bj.com/News/Detail/342" target="_blank"><img src="upload/images/20161115/6361483080375147861706777.jpg" tppabs="http://www.chct-bj.com/upload/images/20161115/6361483080375147861706777.jpg" border="0" /></a></li>
+                    <li><a href="News/Detail/350.htm" tppabs="http://www.chct-bj.com/News/Detail/350" target="_blank"><img src="upload/images/20161227/6361843842055029401717622.jpg" tppabs="http://www.chct-bj.com/upload/images/20161227/6361843842055029401717622.jpg" border="0" /></a></li>
+                    <li><a href="News/Detail/344.htm" tppabs="http://www.chct-bj.com/News/Detail/344" target="_blank"><img src="upload/images/20170111/6361973986150334974341603.jpg" tppabs="http://www.chct-bj.com/upload/images/20170111/6361973986150334974341603.jpg" border="0" /></a></li>
+                    <li><a href="News/Detail/352.htm" tppabs="http://www.chct-bj.com/News/Detail/352" target="_blank"><img src="upload/images/20170111/6361973997070159542940388.jpg" tppabs="http://www.chct-bj.com/upload/images/20170111/6361973997070159542940388.jpg" border="0" /></a></li>
+                    <li><a href="News/Detail/353.htm" tppabs="http://www.chct-bj.com/News/Detail/353" target="_blank"><img src="upload/images/20170111/6361974003963253816845346.jpg" tppabs="http://www.chct-bj.com/upload/images/20170111/6361974003963253816845346.jpg" border="0" /></a></li>
+                    <li><a href="News/Detail/349.htm" tppabs="http://www.chct-bj.com/News/Detail/349" target="_blank"><img src="upload/images/20170111/6361974014021229091477290.jpg" tppabs="http://www.chct-bj.com/upload/images/20170111/6361974014021229091477290.jpg" border="0" /></a></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+var ShowPre2 = new ShowPre({box:"banner_index",Pre:"banner_index_pre",Next:"banner_index_next",numIco:"index_numIco",loop:1,auto:1});
+            </script>
+            <!-- ä»£ç  ç»“æŸ
+                <img src="images/ad-1.jpg" width="1170" height="376" />-->
+        </td>
+    </tr>
+    <tr>
+        <td height="14" bgcolor="#FFFFFF"></td>
+    </tr>
+</table>
+<table width="1170" height="352" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+        <td valign="top">
+            <table width="1116" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="233">
+                        <table width="233" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><a href="About/Detail/66.htm" tppabs="http://www.chct-bj.com/About/Detail/66"><img src="images/home-1.gif" tppabs="http://www.chct-bj.com/images/home-1.gif" board="0" width="233" height="37" border="0"/></a></td>
+                            </tr>
+                            <tr>
+                                <td height="301" background="images/home-2.jpg" tppabs="http://www.chct-bj.com/images/home-2.jpg">
+                                        <div class="leftclass"><a href="About/Detail/66.htm" tppabs="http://www.chct-bj.com/About/Detail/66" class="r1">å†°ç®±</a></div>
+                                        <div class="leftclass"><a href="About/Detail/131.htm" tppabs="http://www.chct-bj.com/About/Detail/131" class="r1">ç©ºè°ƒ</a></div>
+                                        <div class="leftclass"><a href="About/Detail/69.htm" tppabs="http://www.chct-bj.com/About/Detail/69" class="r1">æ´—è¡£æœº</a></div>
+                                        <div class="leftclass"><a href="About/Detail/71.htm" tppabs="http://www.chct-bj.com/About/Detail/71" class="r1">å¨æˆ¿ç”µå™¨</a></div>
+                                        <div class="leftclass"><a href="About/Detail/73.htm" tppabs="http://www.chct-bj.com/About/Detail/73" class="r1">å«æµ´å™¨å…·</a></div>
+                                        <div class="leftclass"><a href="About/Detail/74.htm" tppabs="http://www.chct-bj.com/About/Detail/74" class="r1">å°å®¶ç”µ</a></div>
+                                        <div class="leftclass"><a href="About/Detail/76.htm" tppabs="http://www.chct-bj.com/About/Detail/76" class="r1">ä¸ªæŠ¤ç”µå™¨</a></div>
+                                        <div class="leftclass"><a href="About/Detail/78.htm" tppabs="http://www.chct-bj.com/About/Detail/78" class="r1">å‡€æ°´å‡€åŒ–</a></div>
+                                        <div class="leftclass"><a href="About/Detail/80.htm" tppabs="http://www.chct-bj.com/About/Detail/80" class="r1">æ™ºèƒ½å®¶ç”µ</a></div>
+                                        <div class="leftclass"><a href="About/Detail/82.htm" tppabs="http://www.chct-bj.com/About/Detail/82" class="r1">ç…§æ˜äº§å“</a></div>
+                                        <div class="leftclass"><a href="About/Detail/68.htm" tppabs="http://www.chct-bj.com/About/Detail/68" class="r1">å‹ç¼©æœº</a></div>
+                                        <div class="leftclass"><a href="About/Detail/70.htm" tppabs="http://www.chct-bj.com/About/Detail/70" class="r1">ç”µæœºç”µå™¨</a></div>
+                                        <div class="leftclass"><a href="About/Detail/72.htm" tppabs="http://www.chct-bj.com/About/Detail/72" class="r1">ç”µå™¨é™„ä»¶</a></div>
+                                        <div class="leftclass"><a href="About/Detail/77.htm" tppabs="http://www.chct-bj.com/About/Detail/77" class="r1">ç©å…·</a></div>
+                                        <div class="leftclass"><a href="About/Detail/75.htm" tppabs="http://www.chct-bj.com/About/Detail/75" class="r1">EMCæµ‹è¯•</a></div>
+                                        <div class="leftclass"><a href="About/Detail/147.htm" tppabs="http://www.chct-bj.com/About/Detail/147" class="r1">ç”µå­äº§å“</a></div>
+                                        <div class="leftclass"><a href="About/Detail/132.htm" tppabs="http://www.chct-bj.com/About/Detail/132" class="r1">èƒ½æ•ˆæµ‹è¯•</a></div>
+                                        <div class="leftclass"><a href="About/Detail/79.htm" tppabs="http://www.chct-bj.com/About/Detail/79" class="r1">åŒ–å­¦-ææ–™æµ‹è¯•</a></div>
+                                        <div class="leftclass"><a href="News/Lists/81.htm" tppabs="http://www.chct-bj.com/News/Lists/81" class="r1">å¯é æ€§æµ‹è¯•</a></div>
+                                        <div class="leftclass"><a href="About/Detail/161.htm" tppabs="http://www.chct-bj.com/About/Detail/161" class="r1">åŠŸèƒ½å®‰å…¨è¯„ä¼°</a></div>
+                                        <div class="leftclass"><a href="About/Detail/83.htm" tppabs="http://www.chct-bj.com/About/Detail/83" class="r1">å…¶ä»–</a></div>
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="center">
+                        <table width="612" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="37">
+                                    <script>
+                                        function showselect(obj, showlist) {
+                                            document.getElementById("gsdt").style.display = "none";
+                                            document.getElementById("hydt").style.display = "none";
+                                            document.getElementById(showlist).style.display = "block";
+                                            document.getElementById("Image6").src = "Content/web/images/home-4a.gif"/*tpa=http://www.chct-bj.com/Content/web/images/home-4a.gif*/;
+                                            document.getElementById("Image7").src = "Content/web/images/home-5a.gif"/*tpa=http://www.chct-bj.com/Content/web/images/home-5a.gif*/;
+                                            
+                                            if (showlist == "gsdt")
+                                            { obj.src = "Content/web/images/home-4.gif"/*tpa=http://www.chct-bj.com/Content/web/images/home-4.gif*/; }
+                                            if (showlist == "hydt")
+                                            { obj.src = "Content/web/images/home-5.gif"/*tpa=http://www.chct-bj.com/Content/web/images/home-5.gif*/; }
+                                        }
+                                    </script>
+                                    <table width="200" border="0" align="left" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td width="103"><img  onmouseover="showselect(this, 'gsdt');"  src="images/home-4.gif" tppabs="http://www.chct-bj.com/images/home-4.gif" width="103" height="37" id="Image6" /></td>
+                                            <td><img   onmouseover="showselect(this, 'hydt');" src="images/home-5a.gif" tppabs="http://www.chct-bj.com/images/home-5a.gif" width="98" height="37" id="Image7" /></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="301" bgcolor="#f8f8f8">
+                                    <table width="592" height="270" id="gsdt" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td width="240" valign="top">
+                                                <table width="240" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr></tr>
+                                                    <tr>
+                                                        <td><a href="News/Detail/381.htm" tppabs="http://www.chct-bj.com/News/Detail/381"><img src="upload/images/20170525/6363132382474524999607577.jpg" tppabs="http://www.chct-bj.com/upload/images/20170525/6363132382474524999607577.jpg" width="240" height="131" border="0" /></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="myc-14a">ä¸­å®¶é™¢â€œç”µå™¨å®‰å…¨çŸ¥è¯†æ™®åŠæ•™è‚²æ´»åŠ¨â€èµ°è¿›æ ¡å›­ï¼ˆç¬¬äºŒç«™ï¼‰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left"><a href="News/Detail/381.htm" tppabs="http://www.chct-bj.com/News/Detail/381">5æœˆ12æ—¥ï¼Œä¸­å®¶é™¢ï¼ˆåŒ—äº¬ï¼‰æ£€æµ‹è®¤è¯æœ‰é™å…¬å¸â€œç”µå™¨å®‰å…¨çŸ¥è¯†æ™®åŠæ•™è‚²æ´»åŠ¨â€èµ°è¿›æ ¡å›­æ´»åŠ¨ç¬¬äºŒç«™â€”â€”èµ°è¿›åŸ¹æ–°å°å­¦ã€‚ä¸ºè®©æ›´å¤šçš„ä½å¹´çº§å°åŒå­¦èƒ½å¤Ÿå¬åˆ°è¿™èŠ‚å…¬å¼€è¯¾ï¼Œå­¦æ ¡è°ƒåŠ¨è§†é¢‘ç›´æ’­èµ„æºï¼Œä¸ºåœ¨æ ¡å¸ˆç”Ÿç°åœºç›´æ’­æœ¬æ¬¡è¯¾ç¨‹ã€‚...</a></td>
+                                                  </tr>
+                                                    <tr>
+                                                        <td align="right"><a href="News/Detail/381.htm" tppabs="http://www.chct-bj.com/News/Detail/381"><img src="images/home-8.jpg" tppabs="http://www.chct-bj.com/images/home-8.jpg" width="62" height="19" border="0" /></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="40" align="center"><img src="images/home-6.png" tppabs="http://www.chct-bj.com/images/home-6.png" width="1" height="271" /></td>
+                                            <td valign="top">
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/397.htm" tppabs="http://www.chct-bj.com/News/Detail/397">ä¸­å›½å®¶ç”¨ç”µå™¨ç ”ç©¶é™¢é¢†å¯¼å‰æ¥å…¬å¸è°ƒç ”</a></div></td>
+                                                        <td width="72" class="zt10">17/07/21</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/396.htm" tppabs="http://www.chct-bj.com/News/Detail/396">â€œæé«˜ä¾›ç»™è´¨é‡å’Œæ•ˆç‡ä¸“é¢˜ç ”ç©¶ç­â€èµ°è¿›ä¸­å®¶é™¢å…¬å¸</a></div></td>
+                                                        <td width="72" class="zt10">17/07/07</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/395.htm" tppabs="http://www.chct-bj.com/News/Detail/395">â€œä¸­å›½æ ‡å‡†åŒ–åä¼šç”µå™¨ç”µå­åˆ†ä¼šæˆç«‹å¤§ä¼šâ€åœ¨æ­å·é¡ºåˆ©å¬å¼€</a></div></td>
+                                                        <td width="72" class="zt10">17/07/07</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/386.htm" tppabs="http://www.chct-bj.com/News/Detail/386">â€œä¸­å›½åˆ›é€ â€è®ºå›äº®ç›¸CES ASIAå±• åˆ›æ–°å®åŠ›å“ç‰Œèµ°å‘ä¸–ç•Œèˆå°</a></div></td>
+                                                        <td width="72" class="zt10">17/06/12</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/385.htm" tppabs="http://www.chct-bj.com/News/Detail/385">â€œ2017å¹´åº¦ç”µå†°ç®±äº§å“æŠ€æœ¯äº¤æµåŸ¹è®­ä¼šâ€é¡ºåˆ©å¬å¼€</a></div></td>
+                                                        <td width="72" class="zt10">17/06/12</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/384.htm" tppabs="http://www.chct-bj.com/News/Detail/384">ä¸­å›½å®¶ç”¨ç”µå™¨ç ”ç©¶é™¢ç ”å‘å®éªŒæœåŠ¡åŸºåœ°æˆåŠŸä¸¾åŠâ€œç™¾è¿›åƒâ€ä¸“åœºå¯¹æ¥äº¤æµä¼š</a></div></td>
+                                                        <td width="72" class="zt10">17/06/12</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/383.htm" tppabs="http://www.chct-bj.com/News/Detail/383">â€œæ–°ç‰ˆå®¶ç”¨ç”µå†°ç®±èƒ½æ•ˆæ ‡å‡†äº¤æµä¼šâ€åœ¨æ…ˆæºªå¬å¼€</a></div></td>
+                                                        <td width="72" class="zt10">17/05/25</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/382.htm" tppabs="http://www.chct-bj.com/News/Detail/382">â€œå›½å®¶æ™ºèƒ½å®¶å±…ï¼ˆç”µå­ç”µå™¨ï¼‰è´¨é‡ç›‘ç£æ£€éªŒä¸­å¿ƒâ€ç­¹å»ºæ–¹æ¡ˆ é€šè¿‡ä¸“å®¶è®ºè¯</a></div></td>
+                                                        <td width="72" class="zt10">17/05/24</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                    <tr>
+                                                        <td width="16">&nbsp;</td>
+                                                        <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/381.htm" tppabs="http://www.chct-bj.com/News/Detail/381">ä¸­å®¶é™¢â€œç”µå™¨å®‰å…¨çŸ¥è¯†æ™®åŠæ•™è‚²æ´»åŠ¨â€èµ°è¿›æ ¡å›­ï¼ˆç¬¬äºŒç«™ï¼‰</a></div></td>
+                                                        <td width="72" class="zt10">17/05/16</td>
+                                                    </tr>
+                                                </table>
+                                                <table width="315" height="40" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="right" valign="bottom"><a href="News/Lists/2.htm" tppabs="http://www.chct-bj.com/News/Lists/2"><img src="images/ckgd.png" tppabs="http://www.chct-bj.com/images/ckgd.png" width="62" height="19" border="0" /></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table width="592" height="270" id="hydt" style="display:none;" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td width="240" valign="top">
+                                            </td>
+                                            <td width="40" align="center"><img src="images/home-6.png" tppabs="http://www.chct-bj.com/images/home-6.png" width="1" height="271" /></td>
+                                            <td valign="top">
+                                                    <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                        <tr>
+                                                            <td width="16">&nbsp;</td>
+                                                            <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/398.htm" tppabs="http://www.chct-bj.com/News/Detail/398">ç¬¬ä¸€æ‰¹ã€Šè¾¾æ ‡ç®¡ç†ç›®å½•ã€‹å¼€å§‹å…¬å¼€å¾æ±‚æ„è§å•¦ï¼</a></div></td>
+                                                            <td width="72" class="zt10">17/07/21</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                        <tr>
+                                                            <td width="16">&nbsp;</td>
+                                                            <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/350.htm" tppabs="http://www.chct-bj.com/News/Detail/350">2016ç”µå­ç”µå™¨è¡Œä¸šç»¿è‰²å‘å±•å¹´ä¼šæš¨ç”µå­æ±¡æŸ“é˜²æ²»è‹±é›„ä¼šåœ¨äº¬å¬å¼€</a></div></td>
+                                                            <td width="72" class="zt10">16/12/23</td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="315" height="24" border="0" cellspacing="0" cellpadding="0" background="images/home-10.png" tppabs="http://www.chct-bj.com/images/home-10.png">
+                                                        <tr>
+                                                            <td width="16">&nbsp;</td>
+                                                            <td width="227" align="left"><div style="height:20px;width:227px;overflow:hidden;"><a href="News/Detail/334.htm" tppabs="http://www.chct-bj.com/News/Detail/334">ä¼ä¸šè¯¥å¦‚ä½•åº”å¯¹æ–°ç‰ˆä¸­å›½RoHSæ³•è§„ï¼Ÿ</a></div></td>
+                                                            <td width="72" class="zt10">16/10/18</td>
+                                                        </tr>
+                                                    </table>
+                                                <table width="315" height="40" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td align="right" valign="bottom"><a href="News/Lists/5.htm" tppabs="http://www.chct-bj.com/News/Lists/5"><img src="images/ckgd.png" tppabs="http://www.chct-bj.com/images/ckgd.png" width="62" height="19" border="0" /></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="244" valign="top">
+                        <table width="244" border="0" cellspacing="0" cellpadding="0" id="userlogin">
+                            <tr>
+                                <td height="35" bgcolor="#304658">
+                                    <table width="210" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td class="myc-16">å®¢æˆ·ç™»é™†ç³»ç»Ÿ</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="239" align="center" valign="top" bgcolor="#3082c2">
+                                    <br />
+                                    <table width="210" border="0" align="center" cellpadding="0" cellspacing="0">
+<form action="http://www.chct-bj.com/Custom/Login" method="post">                                       <tr>
+                                            <td width="31" height="34"><img src="images/dl-1.png" tppabs="http://www.chct-bj.com/images/dl-1.png" width="26" height="27" /></td>
+                                            <td height="32" colspan="2">
+                                                <style type="text/css">
+                                                  .loginusername {border: none;height:22px;line-height:22px;width: 173px;
+                    }
+                                                    .password11 {border: none;height:22px;line-height:22px;width: 173px;
+                                                    }
+                                                </style>
+                                                <table width="174" height="24" border="0" cellpadding="0" cellspacing="0" class="bian">
+                                                    <tr>
+                                                        <td><input class="loginusername" name="LoginName" id="LoginName" value="è¯·è¾“å…¥ç”¨æˆ·å" type="text" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}"  /></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="34"><img src="images/dl-2.png" tppabs="http://www.chct-bj.com/images/dl-2.png" width="23" height="27" /></td>
+                                            <td height="32" colspan="2">
+                                                <table width="174" height="24" border="0" cellpadding="0" cellspacing="0" class="bian">
+                                                    <tr>
+                                                        <td><input class="password11" name="Password" id="Password" value="è¯·è¾“å…¥å¯†ç " type="Password" onFocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){value=defaultValue;this.style.color='#999'}" style="border:none;"  /></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="34">&nbsp;</td>
+                                            <td width="70" height="32"><input type="image" src="images/dl-4.png" tppabs="http://www.chct-bj.com/images/dl-4.png" value="ç™»é™†" /><span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span></td>
+                                            <td width="109"><a href="Custom/index.htm" tppabs="http://www.chct-bj.com/Custom/"><img src="images/dl-5.png" tppabs="http://www.chct-bj.com/images/dl-5.png" width="104" height="29" border="0" /></a></td>
+                                        </tr>
+</form>                                        <tr>
+                                            <td height="34">&nbsp;</td>
+                                            <td height="32" colspan="2"><a href="#" class="r1a">å¿˜è®°å¯†ç ï¼Ÿ</a></td>
+                                        </tr>
+                                    </table>
+                                    <img src="images/dl-7.png" tppabs="http://www.chct-bj.com/images/dl-7.png" width="241" height="8" />
+                                    <table width="210" border="0" align="center" cellpadding="0" cellspacing="0">
+<form action="http://www.chct-bj.com/showpdf/Lists" method="post">                                        <tr>
+                                            <td width="31" height="34"><img src="images/dl-3.png" tppabs="http://www.chct-bj.com/images/dl-3.png" width="29" height="30" /></td>
+                                            <td height="32">
+
+                                                <table width="174" height="24" border="0" cellpadding="0" cellspacing="0" class="bian" style="border: 1px solid #ffffff;">
+                                                    <tr>
+                                                        <td><input name="number" id="number" value="è¯·è¾“å…¥è¯ä¹¦ç¼–å·/ç”³è¯·å•ä½åç§°/åˆ¶é€ å•ä½åç§°/ç”Ÿäº§å•ä½åç§°" type="text"  onFocus="if (value == defaultValue) { value = ''; this.style.color = '#fff' }" onBlur="    if (!value) { value = defaultValue; this.style.color = '#fff' }" style="line-height:24px;font-size:12px; font-family:Microsoft Yahei;color:#ffffff;width:174px;height:24px;background-color:transparent;border:none; " /></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="34">&nbsp;</td>
+                                            <td height="32">
+                                                
+                                            <input type="image" src="images/ann.png" tppabs="http://www.chct-bj.com/images/ann.png" value="è¯ä¹¦æŸ¥è¯¢" />
+                                            </td>
+                                        </tr>
+</form>                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="244" height="64" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td valign="bottom"><a href="home.htm" tppabs="http://www.chct-bj.com/home" target="_blank"><img src="images/dl-8.png" tppabs="http://www.chct-bj.com/images/dl-8.png" width="243" height="50" border="0" /></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<script>
+    function cklook() {
+        var number = $("#number").val();
+        //iframeå±‚
+        layer.open({
+            type: 2,
+            title: 'æŠ¥å‘ŠæŸ¥è¯¢ç»“æœ',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['930px', '90%'],
+            content: '/showpdf/?number=' + number + ''  //iframeçš„url
+        });
+    }
+</script>
+<table width="1170" height="352" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+        <td valign="top">
+            <table width="1116" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="233" valign="top">
+                        <table width="233" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><a href="About/Detail/85.htm" tppabs="http://www.chct-bj.com/About/Detail/85"><img src="images/zh-1.gif" tppabs="http://www.chct-bj.com/images/zh-1.gif" border="0" width="233" height="37" /></a></td>
+                            </tr>
+                            <tr>
+                                <td height="129" background="images/zh-2.gif" tppabs="http://www.chct-bj.com/images/zh-2.gif">
+
+                                        <div class="leftclass"><a href="About/Detail/87.htm" tppabs="http://www.chct-bj.com/About/Detail/87" class="r1">æ ‡å‡†ç›¸å…³æœåŠ¡</a></div>
+                                        <div class="leftclass"><a href="About/Detail/89.htm" tppabs="http://www.chct-bj.com/About/Detail/89" class="r1">è´¨é‡ç›‘ç£</a></div>
+                                        <div class="leftclass"><a href="About/Detail/91.htm" tppabs="http://www.chct-bj.com/About/Detail/91" class="r1">å®éªŒå®¤å’¨è¯¢</a></div>
+                                        <div class="leftclass"><a href="About/Detail/86.htm" tppabs="http://www.chct-bj.com/About/Detail/86" class="r1">ä¼ä¸šè´¨æ§æœåŠ¡</a></div>
+                                        <div class="leftclass"><a href="About/Detail/90.htm" tppabs="http://www.chct-bj.com/About/Detail/90" class="r1">è®¡é‡æ ¡å‡†</a></div>
+                                  
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="233" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="63"><a href="About/Detail/157.htm" tppabs="http://www.chct-bj.com/About/Detail/157" target="_blank"><img src="upload/images/20160329/6359485992292377932460112.jpg" tppabs="http://www.chct-bj.com/upload/images/20160329/6359485992292377932460112.jpg" width="233" height="53" border="0" /></a></td>
+                                </tr>
+                                <tr>
+                                    <td height="63"><a href="javascript:if(confirm('http://120.25.68.27:8003/About/Detail/66  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://120.25.68.27:8003/About/Detail/66'" tppabs="http://120.25.68.27:8003/About/Detail/66" target="_blank"><img src="upload/images/20160329/6359485989103031286941442.jpg" tppabs="http://www.chct-bj.com/upload/images/20160329/6359485989103031286941442.jpg" width="233" height="53" border="0" /></a></td>
+                                </tr>
+                                <tr>
+                                    <td height="63"><a href="javascript:if(confirm('http://120.25.68.27:8003/Video/jiaoxue  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://120.25.68.27:8003/Video/jiaoxue'" tppabs="http://120.25.68.27:8003/Video/jiaoxue" target="_blank"><img src="upload/images/20160316/6359375813768836034349205.jpg" tppabs="http://www.chct-bj.com/upload/images/20160316/6359375813768836034349205.jpg" width="233" height="53" border="0" /></a></td>
+                                </tr>
+                                <tr>
+                                    <td height="63"><a href="javascript:if(confirm('http://120.25.68.27:8003/About/Detail/81  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://120.25.68.27:8003/About/Detail/81'" tppabs="http://120.25.68.27:8003/About/Detail/81" target="_blank"><img src="upload/images/20160329/6359485994610392248214536.jpg" tppabs="http://www.chct-bj.com/upload/images/20160329/6359485994610392248214536.jpg" width="233" height="53" border="0" /></a></td>
+                                </tr>
+                        </table>
+                    </td>
+                    <td align="center" valign="top"><table width="612" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="45" valign="top"><a href="About/Detail/7.htm" tppabs="http://www.chct-bj.com/About/Detail/7"><img src="images/zj-1.jpg" tppabs="http://www.chct-bj.com/images/zj-1.jpg" width="612" height="37" border="0"/></a></td>
+                      </tr>
+                      <tr>
+                        <td height="140" align="center" background="index.htm" tppabs="http://www.chct-bj.com/image/20160506.gif"><table width="613" border="0" cellspacing="0" cellpadding="0">
+                          <tbody>
+                            <tr class="firstRow">
+                              <td width="120" align="center"><a href="About/Detail/158.htm" tppabs="http://www.chct-bj.com/About/Detail/158"><img src="upload/image/0507-2.gif" tppabs="http://www.chct-bj.com/upload/image/0507-2.gif" width="118" height="139" border="0"/></a></td>
+                              <td width="120" align="center"><a href="About/Detail/152.htm" tppabs="http://www.chct-bj.com/About/Detail/152"><img src="upload/image/0504-1.gif" tppabs="http://www.chct-bj.com/upload/image/0504-1.gif" width="118" height="139" border="0"/></a></td>
+                              <td width="120" align="center"><a href="About/Detail/157.htm" tppabs="http://www.chct-bj.com/About/Detail/157"><img src="upload/image/0507-1.gif" tppabs="http://www.chct-bj.com/upload/image/0507-1.gif" width="118" height="139" border="0"/></a></td>
+                              <td width="120" align="center"><a href="About/Detail/155.htm" tppabs="http://www.chct-bj.com/About/Detail/155"><img src="upload/image/0504-9.gif" tppabs="http://www.chct-bj.com/upload/image/0504-9.gif" width="118" height="139" border="0"/></a></td>
+                              <td width="120" align="center"><a href="About/Detail/149.htm" tppabs="http://www.chct-bj.com/About/Detail/149"><img src="upload/image/0504-6.gif" tppabs="http://www.chct-bj.com/upload/image/0504-6.gif" width="120" height="139" border="0"/></a></td>
+                            </tr>
+                            <tr class="firstRow">
+                              <td width="120" align="center"><p> äº§å“å®‰å…¨è®¤è¯ </p></td>
+                              <td width="120" align="center"><p> ç”µå­ç”µæ°”ç”µç£å…¼å®¹è®¤è¯ </p></td>
+                              <td width="120" align="center"><p> RoHSè®¤è¯ </p></td>
+                              <td width="120" align="center"><p> æ¶ˆè´¹å“ä½¿ç”¨è¯´æ˜è®¤è¯ </p></td>
+                              <td width="120" align="center" style="word-break: break-all;"><p> é™éŸ³è®¤è¯ </p></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                          <table width="613" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr class="firstRow">
+                                <td width="120" align="center"><a href="About/Detail/134.htm" tppabs="http://www.chct-bj.com/About/Detail/134"><img src="upload/image/0504-3.gif" tppabs="http://www.chct-bj.com/upload/image/0504-3.gif" width="118" height="139" border="0"/></a></td>
+                                <td width="120" align="center"><a href="About/Detail/177.htm" tppabs="http://www.chct-bj.com/About/Detail/177"><img src="upload/image/20160804.gif" tppabs="http://www.chct-bj.com/upload/image/20160804.gif" width="118" height="139" border="0"/></a></td>
+                                <td width="120" align="center"><a href="About/Detail/156.htm" tppabs="http://www.chct-bj.com/About/Detail/156"><img src="upload/image/0504-10.gif" tppabs="http://www.chct-bj.com/upload/image/0504-10.gif" width="118" height="139" border="0"/></a></td>
+                                <td width="120" align="center"><a href="About/Detail/150.htm" tppabs="http://www.chct-bj.com/About/Detail/150"><img src="upload/image/0504-7.gif" tppabs="http://www.chct-bj.com/upload/image/0504-7.gif" width="118" height="139" border="0"/></a></td>
+                                <td width="120" align="center"><a href="About/Detail/148.htm" tppabs="http://www.chct-bj.com/About/Detail/148"><img src="upload/image/0504-5.gif" tppabs="http://www.chct-bj.com/upload/image/0504-5.gif" width="118" height="139" border="0"/></a></td>
+                              </tr>
+                              <tr class="firstRow">
+                                <td width="120" align="center"><p> æ™ºèƒ½å®¶ç”µè®¤è¯ </p></td>
+                                <td width="120" align="center"><p> ç©ºè°ƒæ™ºèƒ½æŒ‡æ•°è®¤è¯ </p></td>
+                                <td width="120" align="center"><p> ä¿¡æ¯å®‰å…¨è®¤è¯ </p></td>
+                                <td width="120" align="center"><p> ç”µå†°ç®±ä¿é²œè®¤è¯ </p></td>
+                                <td width="120" align="center"><p> ä¿æ¹¿æ€§èƒ½è®¤è¯ </p></td>
+                              </tr>
+                            </tbody>
+                        </table></td>
+                      </tr>
+                      <tr>
+                        <td height="10"></td>
+                      </tr>
+                    </table>
+                      <table width="612" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="37"><a href="About/Detail/11.htm" tppabs="http://www.chct-bj.com/About/Detail/11"><img src="images/zj-4.gif" tppabs="http://www.chct-bj.com/images/zj-4.gif" width="612" height="37" border="0" /></a></td>
+                        </tr>
+                            <tr>
+                                <td height="230" align="left" background="images/zj-5.gif" tppabs="http://www.chct-bj.com/images/zj-5.gif">
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/11.htm" tppabs="http://www.chct-bj.com/About/Detail/11" class="r1" style="height:30px;line-height:30px;">å›½é™…CBè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/12.htm" tppabs="http://www.chct-bj.com/About/Detail/12" class="r1" style="height:30px;line-height:30px;">WHO</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/13.htm" tppabs="http://www.chct-bj.com/About/Detail/13" class="r1" style="height:30px;line-height:30px;">æ¬§ç›ŸCEè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/14.htm" tppabs="http://www.chct-bj.com/About/Detail/14" class="r1" style="height:30px;line-height:30px;">æ¬§ç›ŸRoHS</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/15.htm" tppabs="http://www.chct-bj.com/About/Detail/15" class="r1" style="height:30px;line-height:30px;">æ¬§æ´²æµ·å…³è”ç›Ÿ</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/17.htm" tppabs="http://www.chct-bj.com/About/Detail/17" class="r1" style="height:30px;line-height:30px;">å¾·å›½VDE</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/18.htm" tppabs="http://www.chct-bj.com/About/Detail/18" class="r1" style="height:30px;line-height:30px;">å¾·å›½GS</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/19.htm" tppabs="http://www.chct-bj.com/About/Detail/19" class="r1" style="height:30px;line-height:30px;">ç¾å›½ULè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/20.htm" tppabs="http://www.chct-bj.com/About/Detail/20" class="r1" style="height:30px;line-height:30px;">åŒ—ç¾FCC</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/21.htm" tppabs="http://www.chct-bj.com/About/Detail/21" class="r1" style="height:30px;line-height:30px;">ç¾å›½èƒ½æºä¹‹æ˜Ÿè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/24.htm" tppabs="http://www.chct-bj.com/About/Detail/24" class="r1" style="height:30px;line-height:30px;">æ¾³æ–°è®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/26.htm" tppabs="http://www.chct-bj.com/About/Detail/26" class="r1" style="height:30px;line-height:30px;">æ¾³æ´²ç¾Šæ¯›æ´—</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/27.htm" tppabs="http://www.chct-bj.com/About/Detail/27" class="r1" style="height:30px;line-height:30px;">æ—¥æœ¬PSEè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/28.htm" tppabs="http://www.chct-bj.com/About/Detail/28" class="r1" style="height:30px;line-height:30px;">éŸ©å›½KCè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/29.htm" tppabs="http://www.chct-bj.com/About/Detail/29" class="r1" style="height:30px;line-height:30px;">é¦™æ¸¯å®‰å…¨è§„ä¾‹è®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/30.htm" tppabs="http://www.chct-bj.com/About/Detail/30" class="r1" style="height:30px;line-height:30px;">å°æ¹¾BSMIå’ŒNCC</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/31.htm" tppabs="http://www.chct-bj.com/About/Detail/31" class="r1" style="height:30px;line-height:30px;">å°åº¦èƒ½æ•ˆ</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/33.htm" tppabs="http://www.chct-bj.com/About/Detail/33" class="r1" style="height:30px;line-height:30px;">çº¦æ—¦è®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/34.htm" tppabs="http://www.chct-bj.com/About/Detail/34" class="r1" style="height:30px;line-height:30px;">è¶Šå—è®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/35.htm" tppabs="http://www.chct-bj.com/About/Detail/35" class="r1" style="height:30px;line-height:30px;">æµ·æ¹¾è”ç›ŸGCè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/36.htm" tppabs="http://www.chct-bj.com/About/Detail/36" class="r1" style="height:30px;line-height:30px;">é˜¿æ ¹å»·IRAMè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/37.htm" tppabs="http://www.chct-bj.com/About/Detail/37" class="r1" style="height:30px;line-height:30px;">å¢¨è¥¿å“¥è®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/38.htm" tppabs="http://www.chct-bj.com/About/Detail/38" class="r1" style="height:30px;line-height:30px;">å·´è¥¿INMETRO</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/40.htm" tppabs="http://www.chct-bj.com/About/Detail/40" class="r1" style="height:30px;line-height:30px;">å„ç“œå¤šå°”è®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/43.htm" tppabs="http://www.chct-bj.com/About/Detail/43" class="r1" style="height:30px;line-height:30px;">è‚¯å°¼äºšè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/44.htm" tppabs="http://www.chct-bj.com/About/Detail/44" class="r1" style="height:30px;line-height:30px;">å°¼æ—¥åˆ©äºšè®¤è¯</a></div>
+                                        <div class="leftclass" style="width:136px;"><a href="About/Detail/118.htm" tppabs="http://www.chct-bj.com/About/Detail/118" class="r1" style="height:30px;line-height:30px;">æ–°åŠ å¡è®¤è¯</a></div>
+
+                                </td>
+                            </tr>
+                      </table>
+                  </td>
+                    <td width="244" valign="top">
+<table width="244" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="35"><a href="About/Detail/97.htm" tppabs="http://www.chct-bj.com/About/Detail/97"><img src="images/cm-1.gif" tppabs="http://www.chct-bj.com/images/cm-1.gif" width="244" height="40" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                                <td height="160" align="center" valign="top" bgcolor="#f8f8f8"><table width="210" height="155" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                            <td align="left" valign="middle" class="zt14">
+                                                åœ°å€ï¼šåŒ—äº¬ç»æµæŠ€æœ¯å¼€å‘åŒºåšå…´å…«è·¯3å·<br />
+                                                é‚®ç¼–ï¼š100176<br />
+                                                ç”µè¯ï¼š+86 10 58083700<br />
+                                                ä¼ çœŸï¼š+86 10 58083766<br />
+                                                Email:office@cheari.com<br />
+                                                ç½‘ç«™ï¼šwww.chct-bj.com
+                                            </td>
+                                  </tr>
+                                    </table>
+                              </td>
+                            </tr>
+                        </table>                      <table width="233" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td height="54"><a href="#"><img src="images/cm-2.gif" tppabs="http://www.chct-bj.com/images/cm-2.gif" width="244" height="45" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                                <td height="54"><a href="About/Detail/112.htm" tppabs="http://www.chct-bj.com/About/Detail/112"><img src="images/cm-3.gif" tppabs="http://www.chct-bj.com/images/cm-3.gif" width="244" height="45" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                                <td height="54"><a href="DownLoad/Lists/106.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/106"><img src="images/cm-4.gif" tppabs="http://www.chct-bj.com/images/cm-4.gif" width="244" height="45" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                                <td height="54"><a href="Video/jiaoxue.htm" tppabs="http://www.chct-bj.com/Video/jiaoxue"><img src="images/cm-5.gif" tppabs="http://www.chct-bj.com/images/cm-5.gif" width="244" height="45" border="0" /></a></td>
+                            </tr>
+                            <tr>
+                                <td height="54"><a href="About/Detail/160.htm" tppabs="http://www.chct-bj.com/About/Detail/160"><img src="images/20160513.gif" tppabs="http://www.chct-bj.com/images/20160513.gif"  border="0" /></a></td>
+                            </tr>
+			    </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<style type="text/css">
+    .yq {
+        width: 100px;
+    height: 36px;
+    float: left;
+    margin: 5px;
+    }
+</style>
+<table width="1170" height="132" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+        <td>
+            <table width="1116" height="109" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="10"><img src="images/lk-1.gif" tppabs="http://www.chct-bj.com/images/lk-1.gif" width="40" height="109" /></td>
+                    <td width="1106" bgcolor="#e0f0fd" style="padding-left:5px;">
+                            <div class="yq"><a href="javascript:if(confirm('http://www.cheari.org/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.cheari.org/'" tppabs="http://www.cheari.org/" target="_blank"><img src="upload/image/20160112/6358822642865403288642176.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822642865403288642176.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.cheari.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.cheari.com/'" tppabs="http://www.cheari.com/" target="_blank"><img src="upload/image/20160112/6358822651113534399437962.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822651113534399437962.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.aqsiq.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.aqsiq.gov.cn/'" tppabs="http://www.aqsiq.gov.cn/" target="_blank"><img src="upload/image/20160112/6358822671961014591554130.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822671961014591554130.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.saic.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.saic.gov.cn/'" tppabs="http://www.saic.gov.cn/" target="_blank"><img src="upload/image/20160112/6358822687032933738571738.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822687032933738571738.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.cnca.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.cnca.gov.cn/'" tppabs="http://www.cnca.gov.cn/" target="_blank"><img src="upload/image/20160112/6358822707708075283475116.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822707708075283475116.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.sac.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.sac.gov.cn/'" tppabs="http://www.sac.gov.cn/" target="_blank"><img src="upload/image/20160112/6358822719888298489526464.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822719888298489526464.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('https://www.cnas.org.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.cnas.org.cn/'" tppabs="https://www.cnas.org.cn/" target="_blank"><img src="upload/image/20160112/6358822733628962825353540.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822733628962825353540.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.ccaa.org.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.ccaa.org.cn/'" tppabs="http://www.ccaa.org.cn/" target="_blank"><img src="upload/image/20160112/6358822743250571837525293.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822743250571837525293.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.cnis.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.cnis.gov.cn/'" tppabs="http://www.cnis.gov.cn/" target="_blank"><img src="upload/image/20160112/6358822753310474834721211.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822753310474834721211.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.cqc.com.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.cqc.com.cn/'" tppabs="http://www.cqc.com.cn/" target="_blank"><img src="upload/image/20160112/6358822760959496989550030.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822760959496989550030.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.energylabel.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.energylabel.gov.cn/'" tppabs="http://www.energylabel.gov.cn/" target="_blank"><img src="upload/image/20160112/6358822766916244636819104.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822766916244636819104.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.chinanecc.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.chinanecc.cn/'" tppabs="http://www.chinanecc.cn/" target="_blank"><img src="upload/image/20160112/6358822772738329997533405.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822772738329997533405.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.bjtsb.gov.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.bjtsb.gov.cn/'" tppabs="http://www.bjtsb.gov.cn/" target="_blank"><img src="upload/image/20160112/6358822782922803096486689.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822782922803096486689.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.iec.ch/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.iec.ch/'" tppabs="http://www.iec.ch/" target="_blank"><img src="upload/image/20160112/6358822800753370575282885.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822800753370575282885.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.cnca.gov.cn/ywzl/gjgnhz/IEC  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.cnca.gov.cn/ywzl/gjgnhz/IEC'" tppabs="http://www.cnca.gov.cn/ywzl/gjgnhz/IEC" target="_blank"><img src="upload/image/20160112/6358822809686012981388323.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822809686012981388323.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.iecee.org/html/WGgeneral.htm  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.iecee.org/html/WGgeneral.htm'" tppabs="http://www.iecee.org/html/WGgeneral.htm" target="_blank"><img src="upload/image/20160112/6358822817227717788944916.gif" tppabs="http://www.chct-bj.com/upload/image/20160112/6358822817227717788944916.gif" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.cca.org.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.cca.org.cn/'" tppabs="http://www.cca.org.cn/" target="_blank"><img src="upload/images/20160329/6359486051769032363331393.jpg" tppabs="http://www.chct-bj.com/upload/images/20160329/6359486051769032363331393.jpg" border="0" /></a></div>
+                            <div class="yq"><a href="javascript:if(confirm('http://www.tc46.cn/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.tc46.cn/'" tppabs="http://www.tc46.cn/" target="_blank"><img src="upload/images/20160329/6359486057326227292220229.jpg" tppabs="http://www.chct-bj.com/upload/images/20160329/6359486057326227292220229.jpg" border="0" /></a></div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+    <table width="1170" height="386" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+            <td width="276" bgcolor="#c6e6ff">
+                <table width="208" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td height="143" valign="top"><img src="images/logo-di.png" tppabs="http://www.chct-bj.com/images/logo-di.png" width="208" height="133" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                         ã€€ã€€ä¸­å®¶é™¢ï¼ˆåŒ—äº¬ï¼‰æ£€æµ‹è®¤è¯æœ‰é™å…¬å¸æˆç«‹äº2014å¹´12æœˆï¼Œåœ¨åŸæœ‰æ£€æµ‹èµ„è´¨çš„åŸºç¡€ä¸Šï¼Œå®Œå–„æ‰©å……è‡ªæ„¿æ€§äº§å“è®¤è¯æœºæ„èµ„è´¨ï¼Œæˆä¸ºâ€œæ£€æµ‹è®¤è¯ä¸€ä½“åŒ–â€æœºæ„ã€‚<br/>
+
+ã€€ã€€å…¬å¸è‡´åŠ›äºæ„å»ºâ€œä¸€ç«™å¼â€æœåŠ¡å¹³å°ï¼Œä¸ºè¡Œä¸šæä¾›é«˜è´¨é‡çš„æŠ€æœ¯æœåŠ¡ï¼Œæ¨åŠ¨è¡Œä¸šå‘å±•å’ŒæŠ€æœ¯è¿›æ­¥ã€‚ä¾æ‰˜ä¸­å›½å®¶ç”¨ç”µå™¨ç ”ç©¶é™¢å®Œå–„çš„æœåŠ¡ä½“ç³»å’ŒæŠ€æœ¯å®åŠ›ï¼Œå…¬å¸èƒ½å¤Ÿä¸ºå¹¿å¤§å®¢æˆ·æä¾›åŒ…æ‹¬æ£€æµ‹ã€äº§å“è®¤è¯ã€äº§å“è¯„æµ‹è¯„ä»·ã€é£é™©è¯„ä¼°ã€æ ‡å‡†åŠæŠ€æœ¯è§„èŒƒåˆ¶ä¿®è®¢ã€äº§ä¸šç ”ç©¶ã€åŸ¹è®­ã€æŠ€æœ¯å’¨è¯¢ã€å®éªŒå®¤è§„åˆ’ã€å®éªŒå®¤ç®¡ç†ä½“ç³»å’¨è¯¢ç­‰è¦†ç›–æŠ€æœ¯ã€ç®¡ç†ã€è´¨é‡æ§åˆ¶ç­‰éœ€æ±‚çš„å…¨æ–¹ä½è§£å†³æ–¹æ¡ˆã€‚
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="28"><a href="About/Detail/98.htm" tppabs="http://www.chct-bj.com/About/Detail/98">äº†è§£æ›´å¤š &gt;&gt;</a></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="894" valign="top" bgcolor="#aed1ed">
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                </p>
+                <table width="828" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="News/Lists/2.htm" tppabs="http://www.chct-bj.com/News/Lists/2" class="r1c">æ–°é—»ä¸­å¿ƒ</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="About/Detail/6.htm" tppabs="http://www.chct-bj.com/About/Detail/6" class="r1c">è®¤è¯æœåŠ¡</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=168=setwidth>
+                                    <table width=168=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="About/Detail/66.htm" tppabs="http://www.chct-bj.com/About/Detail/66" class="r1c">æ£€æµ‹æœåŠ¡</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="Video/jiaoxue.htm" tppabs="http://www.chct-bj.com/Video/jiaoxue" class="r1c">ä¸­å®¶é™¢å¤§å­¦</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="About/Detail/87.htm" tppabs="http://www.chct-bj.com/About/Detail/87" class="r1c">ç»¼åˆæœåŠ¡</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="DownLoad/Lists/106.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/106" class="r1c">ä¸‹è½½ä¸­å¿ƒ</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="About/Detail/98.htm" tppabs="http://www.chct-bj.com/About/Detail/98" class="r1c">å…³äºæˆ‘ä»¬</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="About/Detail/97.htm" tppabs="http://www.chct-bj.com/About/Detail/97" class="r1c">è”ç³»æˆ‘ä»¬</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                    </tr>
+                    <tr>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="News/Lists/2.htm" tppabs="http://www.chct-bj.com/News/Lists/2" class="r2">å…¬å¸åŠ¨æ€</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="News/Lists/5.htm" tppabs="http://www.chct-bj.com/News/Lists/5" class="r2">è¡Œä¸šåŠ¨æ€</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="News/Lists/103.htm" tppabs="http://www.chct-bj.com/News/Lists/103" class="r2">æ”¿ç­–ä¿¡æ¯</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="News/Lists/104.htm" tppabs="http://www.chct-bj.com/News/Lists/104" class="r2">æŠ€æœ¯ç„¦ç‚¹</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="News/Lists/105.htm" tppabs="http://www.chct-bj.com/News/Lists/105" class="r2">ç ”è®¨äº¤æµ</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px;font-weight:normal;background:none;"><a href="About/Detail/134.htm" tppabs="http://www.chct-bj.com/About/Detail/134" class="r2">CHCTè®¤è¯</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px;font-weight:normal;background:none;"><a href="About/Detail/11.htm" tppabs="http://www.chct-bj.com/About/Detail/11" class="r2">å›½é™…äº§å“è®¤è¯</a></div>
+                        </td>
+                        <td width="168" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/66.htm" tppabs="http://www.chct-bj.com/About/Detail/66" class="r2">å†°ç®±</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/131.htm" tppabs="http://www.chct-bj.com/About/Detail/131" class="r2">ç©ºè°ƒ</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/69.htm" tppabs="http://www.chct-bj.com/About/Detail/69" class="r2">æ´—è¡£æœº</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/71.htm" tppabs="http://www.chct-bj.com/About/Detail/71" class="r2">å¨æˆ¿ç”µå™¨</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/73.htm" tppabs="http://www.chct-bj.com/About/Detail/73" class="r2">å«æµ´å™¨å…·</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/74.htm" tppabs="http://www.chct-bj.com/About/Detail/74" class="r2">å°å®¶ç”µ</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/76.htm" tppabs="http://www.chct-bj.com/About/Detail/76" class="r2">ä¸ªæŠ¤ç”µå™¨</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/78.htm" tppabs="http://www.chct-bj.com/About/Detail/78" class="r2">å‡€æ°´å‡€åŒ–</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/80.htm" tppabs="http://www.chct-bj.com/About/Detail/80" class="r2">æ™ºèƒ½å®¶ç”µ</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/82.htm" tppabs="http://www.chct-bj.com/About/Detail/82" class="r2">ç…§æ˜äº§å“</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/68.htm" tppabs="http://www.chct-bj.com/About/Detail/68" class="r2">å‹ç¼©æœº</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/70.htm" tppabs="http://www.chct-bj.com/About/Detail/70" class="r2">ç”µæœºç”µå™¨</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/72.htm" tppabs="http://www.chct-bj.com/About/Detail/72" class="r2">ç”µå™¨é™„ä»¶</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/77.htm" tppabs="http://www.chct-bj.com/About/Detail/77" class="r2">ç©å…·</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/75.htm" tppabs="http://www.chct-bj.com/About/Detail/75" class="r2">EMCæµ‹è¯•</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/147.htm" tppabs="http://www.chct-bj.com/About/Detail/147" class="r2">ç”µå­äº§å“</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/132.htm" tppabs="http://www.chct-bj.com/About/Detail/132" class="r2">èƒ½æ•ˆæµ‹è¯•</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/79.htm" tppabs="http://www.chct-bj.com/About/Detail/79" class="r2">åŒ–å­¦-ææ–™æµ‹è¯•</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="News/Lists/81.htm" tppabs="http://www.chct-bj.com/News/Lists/81" class="r2">å¯é æ€§æµ‹è¯•</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/161.htm" tppabs="http://www.chct-bj.com/About/Detail/161" class="r2">åŠŸèƒ½å®‰å…¨è¯„ä¼°</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="About/Detail/83.htm" tppabs="http://www.chct-bj.com/About/Detail/83" class="r2">å…¶ä»–</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/120.htm" tppabs="http://www.chct-bj.com/About/Detail/120" class="r2">åŸ¹è®­ä¸šåŠ¡ç®€ä»‹</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="News/Lists/121.htm" tppabs="http://www.chct-bj.com/News/Lists/121" class="r2">åŸ¹è®­è®¡åˆ’</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/122.htm" tppabs="http://www.chct-bj.com/About/Detail/122" class="r2">ä¸»è¦è¯¾ç¨‹æ¨è</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="Clist/List.htm" tppabs="http://www.chct-bj.com/Clist/List" class="r2">åŸ¹è®­æ‹›ç”Ÿ</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/124.htm" tppabs="http://www.chct-bj.com/About/Detail/124" class="r2">åŸ¹è®­è¯ä¹¦æ ·æœ¬</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="News/Lists/127.htm" tppabs="http://www.chct-bj.com/News/Lists/127" class="r2">æ•™å­¦ä¸“åŒº</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/87.htm" tppabs="http://www.chct-bj.com/About/Detail/87" class="r2">æ ‡å‡†ç›¸å…³æœåŠ¡</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/89.htm" tppabs="http://www.chct-bj.com/About/Detail/89" class="r2">è´¨é‡ç›‘ç£</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/91.htm" tppabs="http://www.chct-bj.com/About/Detail/91" class="r2">å®éªŒå®¤å’¨è¯¢</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/86.htm" tppabs="http://www.chct-bj.com/About/Detail/86" class="r2">ä¼ä¸šè´¨æ§æœåŠ¡</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/90.htm" tppabs="http://www.chct-bj.com/About/Detail/90" class="r2">è®¡é‡æ ¡å‡†</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="DownLoad/Lists/106.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/106" class="r2">ç”³è¯·ä¹¦</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="DownLoad/Lists/107.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/107" class="r2">å…¬å¼€æ–‡ä»¶</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="DownLoad/Lists/108.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/108" class="r2">æ“ä½œæŒ‡å—</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="DownLoad/Lists/109.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/109" class="r2">è®¤è¯å®æ–½è§„åˆ™</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/98.htm" tppabs="http://www.chct-bj.com/About/Detail/98" class="r2">å…¬å¸ç®€ä»‹</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/99.htm" tppabs="http://www.chct-bj.com/About/Detail/99" class="r2">èµ„è´¨å±•ç¤º</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/130.htm" tppabs="http://www.chct-bj.com/About/Detail/130" class="r2">ä¼ä¸šæ–‡åŒ–</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="About/Detail/146.htm" tppabs="http://www.chct-bj.com/About/Detail/146" class="r2">åŠ å…¥æˆ‘ä»¬</a></div>
+                        </td>
+                        <td width="100" valign="top">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="1170" height="68" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+            <td height="80" valign="top">
+                <br />
+                <table width="1116" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>ä¸­å®¶é™¢ï¼ˆåŒ—äº¬ï¼‰æ£€æµ‹è®¤è¯æœ‰é™å…¬å¸&copy;ç‰ˆæƒæ‰€æœ‰ <br>
+                          äº¬ICPå¤‡15061065å·<br>
+                          åœ°å€ï¼šåŒ—äº¬å¸‚åŒ—äº¬ç»æµæŠ€æœ¯å¼€å‘åŒºåšå…´å…«è·¯3å·2å¹¢301å®¤ã€€
+                        ç”µè¯ï¼š+86 10 58083700</td>
+                        <td><img src="images/beijing.png" tppabs="http://www.chct-bj.com/images/beijing.png" width="20" height="20" /></td>
+                        <td><a href="javascript:if(confirm('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010033  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010033'" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010033" target="_blank">äº¬å…¬ç½‘å®‰å¤‡11030102010033å·</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "../hm.baidu.com/hm.js-4ec8e5a51e0d66c07113b8b0b21c785f"/*tpa=https://hm.baidu.com/hm.js?4ec8e5a51e0d66c07113b8b0b21c785f*/;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
+<script src="layer/layer.js" tppabs="http://www.chct-bj.com/layer/layer.js"></script>
+<script>
+
+    $('.openbigpic').on('click', function () {
+        var bigpic = $(this).attr("big");
+
+        //iframeå±‚
+        layer.open({
+          type: 2,
+          title: 'å¤§å›¾',
+          shadeClose: true,
+          shade: 0.8,
+          area: ['800px', '90%'],
+          content: bigpic //iframeçš„url
+        });
+
+    });
+</script>

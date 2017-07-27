@@ -1,0 +1,513 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>招贤纳士 </title>
+    <meta name="Keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="renderer" content="webkit" /> 
+    <link href="../../Content/web/css/hct.css" tppabs="http://www.chct-bj.com/Content/web/css/hct.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .leftclass {
+            margin-left: 15px;
+            width: 90px;
+            height: 30px;
+            float: left;
+            color: #0e6eb8;
+            font-family: Microsoft Yahei;
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: bold;
+           background: url("../../Content/web/images/zj-6.gif")/*tpa=http://www.chct-bj.com/Content/web/images/zj-6.gif*//*tpa=http://www.chct-bj.com/Content/web/images/zj-6.gif*/ repeat-x;
+           background-position:0 -3px;overflow: hidden;
+        }
+
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            background-color: #e4e4e4;
+        }
+    </style>
+    <script type="text/javascript">
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+        function MM_preloadImages() { //v3.0
+            var d = document; if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+            }
+        }
+
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2) ; i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+        function addFavorite2() {
+            var url = window.location;
+            var title = document.title;
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.indexOf("360se") > -1) {
+                alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+            }
+            else if (ua.indexOf("msie 8") > -1) {
+                window.external.AddToFavoritesBar(url, title); //IE8
+            }
+            else if (document.all) {
+                try {
+                    window.external.addFavorite(url, title);
+                } catch (e) {
+                    alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+                }
+            }
+            else if (window.sidebar) {
+                window.sidebar.addPanel(title, url, "");
+            }
+            else {
+                alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+            }
+        }
+        function SetHome(obj, url) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)';
+                obj.setHomePage(url);
+            } catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    } catch (e) {
+                        alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                    }
+                } else {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【" + url + "】设置为首页。");
+                }
+            }
+        }
+
+        //收藏本站
+        function AddFavorite(title, url) {
+            try {
+                window.external.addFavorite(url, title);
+            }
+            catch (e) {
+                try {
+                    window.sidebar.addPanel(title, url, "");
+                }
+                catch (e) {
+                    alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请进入新网站后使用Ctrl+D进行添加");
+                }
+            }
+        }
+    
+      </script>
+    <script type="text/javascript" src="../../Content/web/js/jquery.js" tppabs="http://www.chct-bj.com/Content/web/js/jquery.js"></script>
+    <script type="text/javascript" src="../../Content/web/js/common.js" tppabs="http://www.chct-bj.com/Content/web/js/common.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('../../Content/web/images/home-4a.gif'/*tpa=http://www.chct-bj.com/Content/web/images/home-4a.gif*/,'../../Content/web/images/home-5a.gif'/*tpa=http://www.chct-bj.com/Content/web/images/home-5a.gif*/)">
+    <link rel="stylesheet" type="text/css" href="../../Content/web/css/style.css" tppabs="http://www.chct-bj.com/Content/web/css/style.css" />
+    <div class="keifu">
+        <div class="icon_keifu"></div>
+        <div class="keifu_box">
+            <div class="keifu_head" style="display:none;"><a href="javascript:void(0)" class="keifu_close"></a></div>
+            <ul class="keifu_con">
+                <li style="height:123px;"><a href="../../index.htm" tppabs="http://www.chct-bj.com/"><img src="../../images/kefu1.png" tppabs="http://www.chct-bj.com/images/kefu1.png" border="0" width="80" height="123" /></a></li>
+                <li style="height:50px;"><a target="_blank" href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=2122667477&site=qq&menu=yes  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=2122667477&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=2122667477&site=qq&menu=yes"><img src="../../images/kefu2.png" tppabs="http://www.chct-bj.com/images/kefu2.png" border="0" width="80" height="50" /></a></li>
+                <li style="height:51px;"><a target="_blank" href="javascript:if(confirm('http://wpa.qq.com/msgrd?v=3&uin=3123194491&site=qq&menu=yes  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://wpa.qq.com/msgrd?v=3&uin=3123194491&site=qq&menu=yes'" tppabs="http://wpa.qq.com/msgrd?v=3&uin=3123194491&site=qq&menu=yes"><img src="../../images/kefu3.png" tppabs="http://www.chct-bj.com/images/kefu3.png" border="0" width="80" height="51" /></a></li>
+                <li style="height:46px;"><a target="_blank" href="../../Messages/Add.htm" tppabs="http://www.chct-bj.com/Messages/Add"><img src="../../images/kefu4.png" tppabs="http://www.chct-bj.com/images/kefu4.png" border="0" width="80" height="46" /></a></li>
+                <li style="height:84px;"><a  href="#"><img src="../../images/0523-2.gif" tppabs="http://www.chct-bj.com/images/0523-2.gif" border="0" width="80" height="84" /></a></li>
+                <li style="height:26px;"><a href="#"><img src="../../images/kefu5.png" tppabs="http://www.chct-bj.com/images/kefu5.png" border="0" width="80" height="26" /></a></li>
+            </ul>
+            <div class="keifu_bot"></div>
+        </div>
+    </div>
+
+    <table width="1170" height="118" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="64" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="724" bgcolor="#FFFFFF"><a href="#"><img src="../../images/logo.gif" tppabs="http://www.chct-bj.com/images/logo.gif" width="400" height="94" border="0" /></a></td>
+            <td width="382" bgcolor="#FFFFFF" background="../../images/t-1.gif" tppabs="http://www.chct-bj.com/images/t-1.gif">
+                <style type="text/css">
+                    .search11 {    border: none;
+    height: 25px;
+    line-height: 27px;
+    width: 180px;
+                    }
+                </style>
+                <table width="320" height="50
+    " border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="260" align="right">
+                            <a href="../../-.htm#userlogin" tppabs="http://www.chct-bj.com/?#userlogin">会员登陆</a>
+                            | <a href="#" onClick="javascript: addFavorite2();">加入收藏夹</a> |  <a href="javascript:void(0);" onClick="    SetHome(this, '../../index.htm'/*tpa=http://www.chct-bj.com/*/);">设为首页</a></td>
+                    </tr>
+                </table>
+                <table width="212" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+<form action="http://www.chct-bj.com/News/Search" id="0" method="get">                        <td width="14"><img src="../../images/seach-1.gif" tppabs="http://www.chct-bj.com/images/seach-1.gif" width="14" height="32" /></td>
+                        <td width="143" background="../../images/seach-2.gif" tppabs="http://www.chct-bj.com/images/seach-2.gif"><input name="Title"  id="Title" type="text" class="search11" /><input type="hidden" name="search" id="search" value="1" /></td>
+                        <td width="55"><input name="" type="image" src="../../images/seach-3.gif" tppabs="http://www.chct-bj.com/images/seach-3.gif" border="0" /></td>
+</form>                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="1170" height="53" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="18" background="../../images/cd-bj1.gif" tppabs="http://www.chct-bj.com/images/cd-bj1.gif">&nbsp;</td>
+            <td width="1160" background="../../images/cd-bj2.gif" tppabs="http://www.chct-bj.com/images/cd-bj2.gif">
+                <style type="text/css">
+                    .navtitle {
+                        width: 128px;
+                        height: 53px;
+                        float: left;
+                        margin: 0px;
+                        padding: 0px;
+                        line-height: 59px;
+                        font-size: 18px;
+                        color: #ffffff;
+                        cursor: pointer;
+                    }
+
+                    .selectnav {
+                        background-image: url("../../Content/web/images/cd-1a.gif")/*tpa=http://www.chct-bj.com/Content/web/images/cd-1a.gif*//*tpa=http://www.chct-bj.com/Content/web/images/cd-1a.gif*/;
+                        text-align: center;
+                    }
+
+                    .selectednav {
+                        background-image: url("../../Content/web/images/cd-1.gif")/*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*//*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*/;
+                        text-align: center;
+                    }
+
+                    .selectnav:hover {
+                        background-image: url("../../Content/web/images/cd-1.gif")/*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*//*tpa=http://www.chct-bj.com/Content/web/images/cd-1.gif*/;
+                        text-align: center;
+                    }
+                </style>
+                        <div class="navtitle selectednav" onClick="javascript: window.location.href = '../../index.htm'/*tpa=http://www.chct-bj.com/*/">首页</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '../../News/Lists/2.htm'/*tpa=http://www.chct-bj.com/News/Lists/2*/">新闻中心</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '6.htm'/*tpa=http://www.chct-bj.com/About/Detail/6*/">认证服务</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '66.htm'/*tpa=http://www.chct-bj.com/About/Detail/66*/">检测服务</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '../../Video/jiaoxue.htm'/*tpa=http://www.chct-bj.com/Video/jiaoxue*/">中家院大学</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '87.htm'/*tpa=http://www.chct-bj.com/About/Detail/87*/">综合服务</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '../../DownLoad/Lists/106.htm'/*tpa=http://www.chct-bj.com/DownLoad/Lists/106*/">下载中心</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '98.htm'/*tpa=http://www.chct-bj.com/About/Detail/98*/">关于我们</div>
+                        <div class="navtitle selectnav" onClick="javascript: window.location.href = '97.htm'/*tpa=http://www.chct-bj.com/About/Detail/97*/">联系我们</div>
+            </td>
+        </tr>
+    </table>
+    <script>
+        $(".navtitle a").click(function () {
+            $(".navtitle").removeClass("selectednav").addClass("selectnav");
+            $(this).parent(".navtitle").removeClass("selectnav").addClass("selectednav");
+        });
+    </script>
+
+    
+
+
+<table width="1170" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+        <td height="10"></td>
+    </tr>
+    <tr>
+        <td><img src="../../upload/image/20151228/6358689772151989378530327.jpg" tppabs="http://www.chct-bj.com/upload/image/20151228/6358689772151989378530327.jpg" width="1170" height="219" /></td>
+    </tr>
+</table>
+<table width="1170" height="352" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+        <td valign="top">
+
+           <table style="display:" width="1116" height="32" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="233">&nbsp;</td>
+                    <td><a href="../../index.htm" tppabs="http://www.chct-bj.com/">首页</a>  > <a href="../../index.htm" tppabs="http://www.chct-bj.com/" >首页</a> > <a href="112.htm" tppabs="http://www.chct-bj.com/About/Detail/112" >招贤纳士</a> > 招贤纳士</td>
+                </tr>
+            </table>
+            <table width="1116" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="233" valign="top" style="display:">
+                              <table width="212" height="33" border="0" cellspacing="0" cellpadding="0" background="../../images/nei1.gif" tppabs="http://www.chct-bj.com/images/nei1.gif">
+                                    <tr>
+                                        <td width="15">&nbsp;</td>
+                                        <td width="197"><a href="112.htm" tppabs="http://www.chct-bj.com/About/Detail/112" class="r2">招贤纳士</a></td>
+                                    </tr>
+                                </table>
+                              <table width="212" height="33" border="0" cellspacing="0" cellpadding="0" background="../../images/nei2.gif" tppabs="http://www.chct-bj.com/images/nei2.gif">
+                                    <tr>
+                                        <td width="15">&nbsp;</td>
+                                        <td width="197"><a href="113.htm" tppabs="http://www.chct-bj.com/About/Detail/113" class="r2">质量管理整体解决方案</a></td>
+                                    </tr>
+                                </table>
+                              <table width="212" height="33" border="0" cellspacing="0" cellpadding="0" background="../../images/nei2.gif" tppabs="http://www.chct-bj.com/images/nei2.gif">
+                                    <tr>
+                                        <td width="15">&nbsp;</td>
+                                        <td width="197"><a href="117.htm" tppabs="http://www.chct-bj.com/About/Detail/117" class="r2">隐私权声明</a></td>
+                                    </tr>
+                                </table>
+                              <table width="212" height="33" border="0" cellspacing="0" cellpadding="0" background="../../images/nei2.gif" tppabs="http://www.chct-bj.com/images/nei2.gif">
+                                    <tr>
+                                        <td width="15">&nbsp;</td>
+                                        <td width="197"><a href="126.htm" tppabs="http://www.chct-bj.com/About/Detail/126" class="r2">培训联系方式</a></td>
+                                    </tr>
+                                </table>
+                              <table width="212" height="33" border="0" cellspacing="0" cellpadding="0" background="../../images/nei2.gif" tppabs="http://www.chct-bj.com/images/nei2.gif">
+                                    <tr>
+                                        <td width="15">&nbsp;</td>
+                                        <td width="197"><a href="160.htm" tppabs="http://www.chct-bj.com/About/Detail/160" class="r2">认证费用查询</a></td>
+                                    </tr>
+                                </table>
+                        <br/>
+<table width="212" height="33" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td colspan="2"><img src="../../images/zjy.gif" tppabs="http://www.chct-bj.com/images/zjy.gif" width="211" height="28" /></td>
+    </tr>
+    <tr>
+        <td width="15">&nbsp;</td>
+        <td width="197" height="120"> <br />
+            地址：<br />
+            北京经济技术开发区博兴八路3号<br />
+            邮编：100176<br />
+            电话：+86 10 58083700<br />
+            传真：+86 10 58083766<br />
+            Email:office@cheari.com<br />
+            网站：www.chct-bj.com<br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><img src="../../images/zjy-13.gif" tppabs="http://www.chct-bj.com/images/zjy-13.gif" width="211" height="3" /></td>
+    </tr>
+</table>
+<br />
+
+
+
+                    </td>
+                    <td valign="top">
+                        <table style="display:"  width="880" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="myc-24">招贤纳士</td>
+                            </tr>
+                        </table>
+                        <p><br/></p><table width="879" height="41" border="0" cellpadding="0" cellspacing="1"><tbody><tr class="myc-16 firstRow"><td width="168" height="30" align="center" bgcolor="#0e6eb8"><strong>岗位</strong></td><td width="72" height="30" align="center" bgcolor="#0e6eb8"><strong>需求人数</strong></td><td width="134" height="30" align="center" bgcolor="#0e6eb8"><strong>简历接收人</strong></td><td width="500" height="30" align="center" bgcolor="#0e6eb8"><strong>职位要求</strong></td></tr><tr><td align="center" bgcolor="#D7E9F7" class="myc-14">测试工程师</td><td align="center" bgcolor="#D7E9F7">2人</td><td align="center" bgcolor="#D7E9F7">dengyt@cheari.com</td><td bgcolor="#D7E9F7"><p><strong>岗位说明：</strong><br/>1.家用电器及相关产品零部件检验检测<br/>2.家用电器及相关产品材料检验检测<br/>3.测试报告撰写及审核等<br/><strong>任职要求：</strong><br/>1.大学本科学历（机械及电子自动化相关专业优先）<br/>2.熟练的英文听说读写能力<br/>3.工作积极主动、认真负责<br/>4.有较强的学习能力和团队合作意识<br/>5.有家用电器电子产品测试经验者优先&quot;</p></td></tr><tr><td align="center" bgcolor="#EFF7FC" class="myc-14">责任工程师</td><td align="center" bgcolor="#EFF7FC">1人</td><td align="center" bgcolor="#EFF7FC">caoyanxin@cheari.com；<br/>
+ &nbsp; &nbsp;hur@cheari.com</td><td bgcolor="#EFF7FC"><p><strong>岗位职责：</strong><br/>1. 主要负责化学实验方法研究（食品保鲜、营养或塑料助剂、配方）及完成实验操作等相关工作；<br/>2. 负责与认证部门合作完成新认证的准备工作；<br/>3. 负责化学分析实验室的日程基础工作（试验、仪器维护、记录等）；<br/>4. 部门的其他临时工作。<br/><strong>任职要求：</strong><br/>1. 分析化学（食品分析)、应用化学、食品营养、高分子材料等专业<br/>2. 有食品营养分析（维生素C、叶绿素等）、化学分析（GC-MS、ICP、AAS等）实验室实习或工作经验者优先；<br/>3. 具备化学分析实验的基础操作能力；熟悉食品分析常用仪器原理及使用；<br/>4. 具备熟练的英文水平，查阅英文标准；<br/>5. 动手能力强；<br/>6. 健康、开朗，勤于思考；<br/>7. 具有良好的团队合作能力。&quot;<br/></p></td></tr><tr><td align="center" bgcolor="#D7E9F7" class="myc-14">文员</td><td align="center" bgcolor="#D7E9F7">1人</td><td align="center" bgcolor="#D7E9F7">zhangmm@cheari.com</td><td bgcolor="#D7E9F7"><strong>岗位职责：</strong><br/>1、负责部门内部标准、档案整理、收藏、借阅等工作；<br/>2、负责部门公共用品的采购；<br/>3、负责部门人员考勤记录工作，并按时上报部门相关负责人；<br/>4、负责部门出差报销等工作；<br/>5、其他：完成领导临时分派的相关工作。<br/><strong>任职要求：</strong><br/>1. 大专以上学历； <br/>2. 熟练使用办公软件；<br/>3. 一年以上文案工作经验； <br/>4. 有团队精神及服务意识，积极肯干，吃苦耐劳； <br/>5. 责任心强，有良好的沟通能力。&quot;</td></tr><tr><td align="center" bgcolor="#EFF7FC" class="myc-14">信息安全工程师</td><td align="center" bgcolor="#EFF7FC">2人</td><td align="center" bgcolor="#EFF7FC">lihw@cheari.com</td><td bgcolor="#EFF7FC"><strong>岗位职责：</strong><br/>1、信息安全管理评估；安全攻防、渗透性测试、安全检测等技术检查工作；<br/>2、跟踪、研究信息安全技术、保密技术及实际应用；<br/>3、信息安全技术方案设计；<br/><strong>任职要求：</strong><br/>1. 硕士及以上学历（信息安全、网络安全、计算机及相关专业）<br/>2. 掌握信息安全理论知识，在信息安全管理、网络安全、系统安全、安全测试等一个或多个领域有深入研究；<br/>3. 熟练掌握信息安全工具、测试技巧，对信息安全攻击、防护领域的流程和方法有较深的认识和实践。<br/>4. 了解等级保护、信息安全管理体系、信息安全风险评估/管理、PKI/CA等相关标准；<br/>5. 具有良好沟通能力、分析能力、文字表达能力、清晰的逻辑思维。<br/>6. 动手能力强、具有CISE等信息安全资质证书优先&quot;</td></tr><tr><td align="center" bgcolor="#D7E9F7" class="myc-14">测试研发工程师</td><td align="center" bgcolor="#D7E9F7">2人</td><td align="center" bgcolor="#D7E9F7">lihw@cheari.com</td><td bgcolor="#D7E9F7"><p><strong>岗位职责：</strong><br/>①电气产品的风险分析，电子电路及软件测试方案制定与实施，测试报告撰写；<br/>②测试设备软硬件开发；<br/>③测试规范的研制与验证；<br/>④技术调研及技术报告撰写；<br/>⑤其他相关工作。<br/><strong>任职要求：</strong><br/>1. 硕士及以上学历（测控技术与仪器、自动化、机械电子工程、电子信息工程、电子科学与技术、微电子、计算机科学与技术、软件（嵌入式方向））<br/>2. 有嵌入式软件开发经验者优先；有软件测试经验者优先<br/>3. 工作积极主动，认真负责，能承受工作压力<br/>4. 强烈的责任心，良好的学习和沟通能力、团队合作和进取精神<br/>5. 精通数字/模拟电路原理设计，PCB/FPC布线，熟练使用电子电路设计工具，如Matlab、Allegro、Cadence、Orca、PSPICE、PowerPC其中一种以上，精通FPGA或DSP设计（微电子方向）；熟悉C语言、汇编语言；熟悉单片机架构&quot;</p></td></tr><tr><td align="center" bgcolor="#EFF7FC" class="myc-14">项目工程师（小家电）</td><td align="center" bgcolor="#EFF7FC">2人</td><td align="center" bgcolor="#EFF7FC">luw@cheari.com</td><td bgcolor="#EFF7FC"><strong>岗位职责：</strong>进行产品的检测、编制报告等工作<br/><strong>任职要求：</strong><br/>1. 有认证、质量检测等相关工作经验者优先；<br/>2. 具有较强的执行能力，为人谦逊；<br/>3. 具有创新精神，动手能力强；<br/>4. 熟练使用办公软件；&quot;</td></tr><tr><td align="center" bgcolor="#D7E9F7" class="myc-14">软件研发工程师</td><td align="center" bgcolor="#D7E9F7">1人</td><td align="center" bgcolor="#D7E9F7">luw@cheari.com</td><td bgcolor="#D7E9F7"><strong>岗位职责：</strong>实验室测试系统软件开发及维护 <br/><strong>任职要求：</strong><br/>1. 计算机工程相关专业，有软件开发经验者优先<br/>2. 熟练使用VB，VC等语言，能够熟练使用数据库进行相关软件开发工作<br/>3. 具有扎实的网络、操作系统等计算机基础知识<br/>4. 具有良好的团队合作精神&quot;</td></tr><tr><td align="center" bgcolor="#EFF7FC" class="myc-14">主管会计</td><td align="center" bgcolor="#EFF7FC">1人</td><td align="center" bgcolor="#EFF7FC">zhangmm@cheari.com</td><td bgcolor="#EFF7FC"><strong>工作内容：</strong><br/><p>1.业务主管职位，负责工作小组，给下级成员提供引导或支持并监督他们的日常活动 &nbsp; <br/>2.执行、协调财务稽核、审计、会计工作 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.监督执行、维护公司财务管理程序和政策，参与制定年度、季度财务计划 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br/>4.向公司管理层提供各项财务报告和必要的财务分析 &nbsp; &nbsp; &nbsp; 5.根据公司业务情况，及时、准确计算各项税款，按时申报缴纳<br/>6.完成领导交办的其他工作</p><strong>任职要求：</strong><br/>1.财务、会计、金融、管理等专业本科以上学历，有中级及以上会计职称者优先<br/>2.三年以上财务管理工作经验<br/>3.熟悉国家金融政策、企业财务制度及流程、会计电算化，精通相关财税法律法规 <br/>4.较强的成本管理、风险控制和财务分析的能力<br/>5.良好的组织、协调、沟通能力和团队协作精神，能承受较大工作压力 <br/>6.具有国企预算制管理经验者优先；具有集团制财务管理经验者优先&quot;<br/></td></tr><tr><td align="center" bgcolor="#D7E9F7" class="myc-14">检测工程师</td><td align="center" bgcolor="#D7E9F7">1人</td><td align="center" bgcolor="#D7E9F7">hur@cheari.com</td><td bgcolor="#D7E9F7"><p><strong>岗位说明</strong><br/>1.家用电器产品检测、编制报告等；<br/>2.测试报告撰写及审核等。<br/><strong>任职要求：</strong><br/>1.大学本科学历（通信技术工程术、电子技术工程、自动化工程、计算机工程、机械工程及自动化等专业）；<br/>2.有电气检测经验者优先；<br/>3.工作积极主动、认真负责；<br/>4.有较强的学习能力和团队合作意识。&quot;</p></td></tr><tr><td align="center" bgcolor="#EFF7FC" class="myc-14">实验员/文员</td><td align="center" bgcolor="#EFF7FC">1人</td><td align="center" bgcolor="#EFF7FC">zhangmm@cheari.com</td><td bgcolor="#EFF7FC">1、 会用办公软件出具原始记录和正式报告。<br/>2、 实验室相关文档的整理和收集工作。<br/>3、 配合项目工程师，参加实验室评审（如CNAS、CB等）及能力验证、比对等工作。<br/>4、 配合项目工程师，具体执行检验工作，按照标准或按规定检测方法进行检验，并完成检验记录。<br/>5、 完成领导临时分派的相关工作。 <br/>6、 积极参加业务范围内的各项培训，提高自身技术能力水平。能够对承担项目中发现的技术<br/><strong>任职要求：</strong>（按要求重要程度由强到弱填写）<br/>1、熟练使用Photoshop、Word、Excel等办公软件，有较强的动手能力，有基本英语听说读写能力。<br/>2、工作认真负责、踏实肯吃苦，处理工作要细心、有耐心、能长期加班，办事效率高；<br/>3、有较强的学习、理解、沟通能力及协调能力；<br/>4、具有服务意识、团队意识；<br/>5、有职业道德，能把工作当作自己的事业，想长期在这个行业发展；<br/>6、家庭住址：北京经济技术开发区及附近。<br/></td></tr><tr><td align="center" bgcolor="#D7E9F7" class="myc-14">责任工程师</td><td align="center" bgcolor="#D7E9F7">1人</td><td align="center" bgcolor="#D7E9F7">caoyanxin@cheari.com</td><td bgcolor="#D7E9F7"><p><strong>岗位职责：</strong><br/>1、依据GB 6675.2-2014标准对玩具样品进行物理性能方面的测试； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;或依据GB 19865-2005对电玩具样品进行安全方面的测试； <br/>2、负责独立完成玩具产品的测试报告； &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3、负责玩具物理性能实验室日常工作（仪器维护、期间核查、温湿度记录、试验记录等）；<br/>4、部门的其他临时工作。<br/><strong>任职要求：</strong><br/>1、熟悉玩具物理性能、电玩具安全的测试仪器与方法；<br/>2、玩具制造、玩具设计以及其他物理参数测试相关专业； <br/>3、动手能力强有玩具检测实验室、玩具生产企业实习或工作经验优先；<br/>4、查阅英文标准； &quot;</p></td></tr></tbody></table><p><br/><br/><br/><br/><br/></p><p><br/></p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+    <table width="1170" height="386" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+            <td width="276" bgcolor="#c6e6ff">
+                <table width="208" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td height="143" valign="top"><img src="../../images/logo-di.png" tppabs="http://www.chct-bj.com/images/logo-di.png" width="208" height="133" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                         　　中家院（北京）检测认证有限公司成立于2014年12月，在原有检测资质的基础上，完善扩充自愿性产品认证机构资质，成为“检测认证一体化”机构。<br/>
+
+　　公司致力于构建“一站式”服务平台，为行业提供高质量的技术服务，推动行业发展和技术进步。依托中国家用电器研究院完善的服务体系和技术实力，公司能够为广大客户提供包括检测、产品认证、产品评测评价、风险评估、标准及技术规范制修订、产业研究、培训、技术咨询、实验室规划、实验室管理体系咨询等覆盖技术、管理、质量控制等需求的全方位解决方案。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="28"><a href="98.htm" tppabs="http://www.chct-bj.com/About/Detail/98">了解更多 &gt;&gt;</a></td>
+                    </tr>
+                </table>
+            </td>
+            <td width="894" valign="top" bgcolor="#aed1ed">
+                <p>
+                    <br />
+                    <br />
+                    <br />
+                </p>
+                <table width="828" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="../../News/Lists/2.htm" tppabs="http://www.chct-bj.com/News/Lists/2" class="r1c">新闻中心</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="6.htm" tppabs="http://www.chct-bj.com/About/Detail/6" class="r1c">认证服务</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=168=setwidth>
+                                    <table width=168=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="66.htm" tppabs="http://www.chct-bj.com/About/Detail/66" class="r1c">检测服务</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="../../Video/jiaoxue.htm" tppabs="http://www.chct-bj.com/Video/jiaoxue" class="r1c">中家院大学</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="87.htm" tppabs="http://www.chct-bj.com/About/Detail/87" class="r1c">综合服务</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="../../DownLoad/Lists/106.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/106" class="r1c">下载中心</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="98.htm" tppabs="http://www.chct-bj.com/About/Detail/98" class="r1c">关于我们</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width=100=setwidth>
+                                    <table width=100=setwidth height="28" border="0" cellspacing="0" cellpadding="0" background="../../images/di-1.png" tppabs="http://www.chct-bj.com/images/di-1.png">
+                                        <tr>
+                                            <td><a href="97.htm" tppabs="http://www.chct-bj.com/About/Detail/97" class="r1c">联系我们</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                    </tr>
+                    <tr>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="../../News/Lists/2.htm" tppabs="http://www.chct-bj.com/News/Lists/2" class="r2">公司动态</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="../../News/Lists/5.htm" tppabs="http://www.chct-bj.com/News/Lists/5" class="r2">行业动态</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="../../News/Lists/103.htm" tppabs="http://www.chct-bj.com/News/Lists/103" class="r2">政策信息</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="../../News/Lists/104.htm" tppabs="http://www.chct-bj.com/News/Lists/104" class="r2">技术焦点</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal; background:none;"><a href="../../News/Lists/105.htm" tppabs="http://www.chct-bj.com/News/Lists/105" class="r2">研讨交流</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px;font-weight:normal;background:none;"><a href="134.htm" tppabs="http://www.chct-bj.com/About/Detail/134" class="r2">CHCT认证</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px;font-weight:normal;background:none;"><a href="11.htm" tppabs="http://www.chct-bj.com/About/Detail/11" class="r2">国际产品认证</a></div>
+                        </td>
+                        <td width="168" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="66.htm" tppabs="http://www.chct-bj.com/About/Detail/66" class="r2">冰箱</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="131.htm" tppabs="http://www.chct-bj.com/About/Detail/131" class="r2">空调</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="69.htm" tppabs="http://www.chct-bj.com/About/Detail/69" class="r2">洗衣机</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="71.htm" tppabs="http://www.chct-bj.com/About/Detail/71" class="r2">厨房电器</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="73.htm" tppabs="http://www.chct-bj.com/About/Detail/73" class="r2">卫浴器具</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="74.htm" tppabs="http://www.chct-bj.com/About/Detail/74" class="r2">小家电</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="76.htm" tppabs="http://www.chct-bj.com/About/Detail/76" class="r2">个护电器</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="78.htm" tppabs="http://www.chct-bj.com/About/Detail/78" class="r2">净水净化</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="80.htm" tppabs="http://www.chct-bj.com/About/Detail/80" class="r2">智能家电</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="82.htm" tppabs="http://www.chct-bj.com/About/Detail/82" class="r2">照明产品</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="68.htm" tppabs="http://www.chct-bj.com/About/Detail/68" class="r2">压缩机</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="70.htm" tppabs="http://www.chct-bj.com/About/Detail/70" class="r2">电机电器</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="72.htm" tppabs="http://www.chct-bj.com/About/Detail/72" class="r2">电器附件</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="77.htm" tppabs="http://www.chct-bj.com/About/Detail/77" class="r2">玩具</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="75.htm" tppabs="http://www.chct-bj.com/About/Detail/75" class="r2">EMC测试</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="147.htm" tppabs="http://www.chct-bj.com/About/Detail/147" class="r2">电子产品</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="132.htm" tppabs="http://www.chct-bj.com/About/Detail/132" class="r2">能效测试</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="79.htm" tppabs="http://www.chct-bj.com/About/Detail/79" class="r2">化学-材料测试</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="../../News/Lists/81.htm" tppabs="http://www.chct-bj.com/News/Lists/81" class="r2">可靠性测试</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="161.htm" tppabs="http://www.chct-bj.com/About/Detail/161" class="r2">功能安全评估</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:75px; font-weight:normal;background:none;"><a href="83.htm" tppabs="http://www.chct-bj.com/About/Detail/83" class="r2">其他</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="120.htm" tppabs="http://www.chct-bj.com/About/Detail/120" class="r2">培训业务简介</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="../../News/Lists/121.htm" tppabs="http://www.chct-bj.com/News/Lists/121" class="r2">培训计划</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="122.htm" tppabs="http://www.chct-bj.com/About/Detail/122" class="r2">主要课程推荐</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="../../Clist/List.htm" tppabs="http://www.chct-bj.com/Clist/List" class="r2">培训招生</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="124.htm" tppabs="http://www.chct-bj.com/About/Detail/124" class="r2">培训证书样本</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="../../News/Lists/127.htm" tppabs="http://www.chct-bj.com/News/Lists/127" class="r2">教学专区</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="87.htm" tppabs="http://www.chct-bj.com/About/Detail/87" class="r2">标准相关服务</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="89.htm" tppabs="http://www.chct-bj.com/About/Detail/89" class="r2">质量监督</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="91.htm" tppabs="http://www.chct-bj.com/About/Detail/91" class="r2">实验室咨询</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="86.htm" tppabs="http://www.chct-bj.com/About/Detail/86" class="r2">企业质控服务</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="90.htm" tppabs="http://www.chct-bj.com/About/Detail/90" class="r2">计量校准</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="../../DownLoad/Lists/106.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/106" class="r2">申请书</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="../../DownLoad/Lists/107.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/107" class="r2">公开文件</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="../../DownLoad/Lists/108.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/108" class="r2">操作指南</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="../../DownLoad/Lists/109.htm" tppabs="http://www.chct-bj.com/DownLoad/Lists/109" class="r2">认证实施规则</a></div>
+                        </td>
+                        <td width="100" valign="top">
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="98.htm" tppabs="http://www.chct-bj.com/About/Detail/98" class="r2">公司简介</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="99.htm" tppabs="http://www.chct-bj.com/About/Detail/99" class="r2">资质展示</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="130.htm" tppabs="http://www.chct-bj.com/About/Detail/130" class="r2">企业文化</a></div>
+                                <div class="leftclass" style="margin-left:0px;width:85px; font-weight:normal;background:none;"><a href="146.htm" tppabs="http://www.chct-bj.com/About/Detail/146" class="r2">加入我们</a></div>
+                        </td>
+                        <td width="100" valign="top">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="1170" height="68" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr>
+            <td height="80" valign="top">
+                <br />
+                <table width="1116" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>中家院（北京）检测认证有限公司&copy;版权所有 <br>
+                          京ICP备15061065号<br>
+                          地址：北京市北京经济技术开发区博兴八路3号2幢301室　
+                        电话：+86 10 58083700</td>
+                        <td><img src="../../images/beijing.png" tppabs="http://www.chct-bj.com/images/beijing.png" width="20" height="20" /></td>
+                        <td><a href="javascript:if(confirm('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010033  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010033'" tppabs="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11030102010033" target="_blank">京公网安备11030102010033号</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "../../../hm.baidu.com/hm.js-4ec8e5a51e0d66c07113b8b0b21c785f"/*tpa=https://hm.baidu.com/hm.js?4ec8e5a51e0d66c07113b8b0b21c785f*/;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
+<script src="../../layer/layer.js" tppabs="http://www.chct-bj.com/layer/layer.js"></script>
+<script>
+
+    $('.openbigpic').on('click', function () {
+        var bigpic = $(this).attr("big");
+
+        //iframe层
+        layer.open({
+          type: 2,
+          title: '大图',
+          shadeClose: true,
+          shade: 0.8,
+          area: ['800px', '90%'],
+          content: bigpic //iframe的url
+        });
+
+    });
+</script>
